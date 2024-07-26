@@ -119,12 +119,10 @@ G.map({
     -- buffers
     { 'n', 'W',           ':bw<cr>',          { noremap = true, silent = true } },
     { 'n', 'ss',          ':bn<cr>',          { noremap = true, silent = true } },
-    { 'n', '<m-left>',    ':bp<cr>',          { noremap = true, silent = true } },
-    { 'n', '<m-right>',   ':bn<cr>',          { noremap = true, silent = true } },
-    { 'v', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
-    { 'v', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
-    { 'i', '<m-left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
-    { 'i', '<m-right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
+    { 'n', 'sc',    ':bp<cr>',          { noremap = true, silent = true } },
+    { 'n', 'sd',   ':bn<cr>',          { noremap = true, silent = true } },
+    { 'n', 't<Left>',    '<esc>:bp<cr>',     { noremap = true, silent = true } },
+    { 'n', 't<Right>',   '<esc>:bn<cr>',     { noremap = true, silent = true } },
 
     -- tt 打开一个10行大小的终端
     { 'n', 'tt',          ':below 10sp | term<cr>a',                          { noremap = true, silent = true } },

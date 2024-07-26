@@ -8,6 +8,7 @@ G.api.nvim_create_autocmd({ "FileType" }, { command = "try | silent! loadview | 
 G.api.nvim_create_autocmd({ "BufLeave", "BufWinLeave" }, { command = "silent! mkview" })
 G.api.nvim_create_autocmd({ "InsertEnter" }, { command = "hi CursorLine ctermbg=235" })
 G.api.nvim_create_autocmd({ "InsertLeave" }, { command = "hi CursorLine ctermbg=none" })
+G.api.nvim_create_autocmd({ "VimEnter" }, { command = "colorscheme dracula" })
 
 -- 以下是for不同文件类型的相关配置
 
